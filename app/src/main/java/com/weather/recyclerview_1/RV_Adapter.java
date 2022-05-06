@@ -23,6 +23,7 @@ public class RV_Adapter extends RecyclerView.Adapter<RV_Adapter.RV_ViewHolder>{
         public RV_ViewHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.item_textview);
+
         }
     }
 
