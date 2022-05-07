@@ -5,10 +5,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RV_Adapter.ClickListener {
 
     private RecyclerView mRecyclerView;
     private RV_Adapter adapter;
@@ -25,15 +26,20 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
 
 
-        adapter = new RV_Adapter(getNUM());
+        adapter = new RV_Adapter(getNUM(),this);
 
         mRecyclerView.setAdapter(adapter);
 
 
     }
+
+    @Override
+    public void onItemClick(int index) {
+        Toast.makeText(this, "Item Clicked "+index, Toast.LENGTH_LONG).show();
+    }
     ArrayList<String> getNUM() {
         ArrayList<String> num = new ArrayList<>();
-        for(int i=0; i<25; i++){
+        for(int i=0; i<50; i++){
             String str = "........."+i+"."+"  ->"+i+"";
             num.add(str);
         }
