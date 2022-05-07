@@ -3,12 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:padding="5dp">
 
     <TextView
         android:id="@+id/item_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="TEST TEXT"/>
+        tools:text="TEST TEXT"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@drawable/background"
+        />
 
 </LinearLayout>

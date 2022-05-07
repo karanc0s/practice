@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
     ArrayList<String> getNUM() {
         ArrayList<String> num = new ArrayList<>();
-        for(int i=0; i<=17; i++){
+        for(int i=0; i<25; i++){
             String str = "........."+i+"."+"  ->"+i+"";
             num.add(str);
         }
