@@ -29,6 +29,7 @@ public class RV_Adapter extends RecyclerView.Adapter<RV_Adapter.RV_ViewHolder>{
     // Interface for the clickListener in recycler View
     public interface ClickListener{
         void onItemClick(int index);
+
     }
     private ClickListener listener;
 
